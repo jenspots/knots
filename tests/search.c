@@ -7,6 +7,10 @@ void ananas() {
     const char* search_term = "ana";
     const char* match = NULL;
 
+    match = knots_search_shift_or(text, search_term);
+    assert(match);
+    assert(strncmp(search_term, match, strlen(search_term)) == 0);
+
     match = knots_search_shift_and(text, search_term);
     assert(match);
     assert(strncmp(search_term, match, strlen(search_term)) == 0);
@@ -18,6 +22,10 @@ void barbados() {
     const char* match = NULL;
 
     match = knots_search_shift_and(text, search_term);
+    assert(match);
+    assert(strncmp(search_term, match, strlen(search_term)) == 0);
+
+    match = knots_search_shift_or(text, search_term);
     assert(match);
     assert(strncmp(search_term, match, strlen(search_term)) == 0);
 }

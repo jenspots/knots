@@ -25,5 +25,11 @@ const char* knots_search_bmh(const char* text, const char* search_term);
  */
 const char* knots_search_shift_and(const char* text, const char* search_term);
 
+/**
+ * Searches a text for a literal string match using the shift-or algorithm.
+ * @return Pointer to the start of the match in the text when found, otherwise
+ * NULL is returned.
+ */
+const char* knots_search_shift_or(const char* text, const char* search_term);
 
 #endif // KNOTS_SEARCH_H
