@@ -9,7 +9,6 @@
  */
 const char* knots_search_kmp(const char* text, const char* search_term);
 
-
 /**
  * Searches a text for a literal string match using the Boyer-Moore-Horspool
  * algorithm.

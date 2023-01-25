@@ -10,6 +10,8 @@ uint64_t knots_compare(const char* a, const char* b, uint64_t n) {
             return i;
         }
     }
+
+    return 0;
 }
 
 const char* knots_search_shift_and(const char* text, const char* search_term) {
