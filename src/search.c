@@ -4,16 +4,6 @@
 #include <stdint.h>
 #include <knots/search.h>
 
-uint64_t knots_compare(const char* a, const char* b, uint64_t n) {
-    for (uint64_t i = 0; i < n; ++i) {
-        if (a[i] != b[i] || a[i] == '\0') {
-            return i;
-        }
-    }
-
-    return 0;
-}
-
 const char* knots_search_shift_and(const char* text, const char* search_term) {
     assert(text);
     assert(search_term);
